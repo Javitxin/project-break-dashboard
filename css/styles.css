@@ -274,3 +274,69 @@ p {
     color: whitesmoke;
     background-color: rgba(23, 84, 228, 0.86);
 }
+
+
+/*----LISTADO------*/
+
+.container-listado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listado p {
+    font-size: 1.5em;
+}
+
+.listado {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+::placeholder {
+    font-size: 8px;
+}
+
+.enl-desc {
+    margin: 5px;
+}
+
+.enlc-nombre {
+    margin: 5px;
+}
+
+.btnAñadirEnlace {
+    margin: 10px;
+}
+
+.ul-footerL {
+    display: flex;
+    gap: 25px;
+    height: 340px;
+    align-items: flex-end;
+}
+
+.containerList {
+    display: flex;
+    width: 317px;
+}
+
+.listado-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.listado-enlaces li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+}
