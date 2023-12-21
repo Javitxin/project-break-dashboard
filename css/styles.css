@@ -1,342 +1,352 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500&family=Space+Mono&display=swap');
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/*---EMPIZA MIS CSS--*/
-
-
-/*--Modifico las imagenes del fondo--*/
-
-.imgBack {
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: background 10s linear;
-}
-
-
-/*--- Reloj ----*/
-
-.web-principal {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.container-Header {
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.form_reloj {
-    display: flex;
-    padding: 12%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.phraseOTDay {
-    padding: 5px;
-    font-size: 1em;
-    color: rgba(245, 245, 245, 0.693);
-}
-
-p {
-    font-size: 2em;
-    color: rgba(245, 245, 245, 0.693);
-}
-
-.reloj {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 8em;
-    color: rgba(245, 245, 245, 0.549);
-}
-
-
-/*---Date-----*/
-
-.date {
-    font-size: 1em;
-    color: rgba(245, 245, 245, 0.693);
-}
-
-
-/*----footer Reloj---*/
-
-.containerNav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.ul-footer {
-    display: flex;
-    padding-right: 15px;
-    gap: 25px;
-    height: 170px;
-    align-items: flex-end;
-}
-
-
-/*-----CONTRASEÑA-----*/
-
-.ul-footerC {
-    display: flex;
-    padding-right: 15px;
-    gap: 25px;
-    height: 95px;
-    align-items: flex-end;
-}
-
-.contraseña P {
-    font-size: 2em;
-    color: rgba(245, 245, 245, 0.693);
-}
-
-.contraseña div {
-    font-size: 1em;
-    color: rgba(245, 245, 245, 0.693);
-}
-
-.container-contraseña {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 12%;
-    padding-right: 12%;
-}
-
-.container-contraseña div {
-    padding: 5%;
-    padding-left: 2px;
-}
-
-.mostrar-contraseña {
-    padding-left: 2px;
-    border-radius: 10px;
-    height: 20px;
-    color: white;
-    background-color: darkblue;
-}
-
-.num-contraseñas {
-    width: 30px;
-    border-radius: 5px;
-    background-color: whitesmoke;
-    color: black;
-}
-
-.btnComtraseña {
-    height: 30px;
-    border-radius: 8px;
-    color: whitesmoke;
-    background-color: rgba(23, 84, 228, 0.86);
-}
-
-
-/*----LISTADO------*/
-
-.container-listado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.listado p {
-    font-size: 1.5em;
-}
-
-.listado {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    height: 500px;
-}
-
-::placeholder {
-    font-size: 8px;
-}
-
-.enl-desc {
-    margin: 5px;
-}
-
-.enlc-nombre {
-    margin: 5px;
-}
-
-.btnAñadirEnlace {
-    margin: 10px;
-}
-
-.ul-footerL {
-    display: flex;
-    gap: 25px;
-    height: 340px;
-    align-items: flex-end;
-}
-
-.containerList {
-    display: flex;
-    width: 317px;
-}
-
-.listado-enlaces {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.listado-enlaces li {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 1px solid;
-    width: 90px;
-    height: 50px;
-    border-radius: 5px;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500&family=Space+Mono&display=swap');
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+    }
+    /*---EMPIZA MIS CSS--*/
+    /*--Modifico las imagenes del fondo--*/
+    
+    .imgBack {
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background 10s linear;
+    }
+    /*--- Reloj ----*/
+    
+    .web-principal {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    
+    .container-Header {
+        padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .form_reloj {
+        display: flex;
+        padding: 12%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .phraseOTDay {
+        padding: 5px;
+        font-size: 1em;
+        color: rgba(245, 245, 245, 0.693);
+    }
+    
+    p {
+        font-size: 2em;
+        color: rgba(245, 245, 245, 0.693);
+    }
+    
+    .reloj {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 8em;
+        color: rgba(245, 245, 245, 0.549);
+    }
+    /*---Date-----*/
+    
+    .date {
+        font-size: 1em;
+        color: rgba(245, 245, 245, 0.693);
+    }
+    /*----footer Reloj---*/
+    
+    .containerNav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .ul-footer {
+        display: flex;
+        gap: 25px;
+        height: 180px;
+        align-items: flex-end;
+    }
+    /*-----CONTRASEÑA-----*/
+    
+    .ul-footerC {
+        display: flex;
+        gap: 25px;
+        height: 110px;
+        align-items: flex-end;
+    }
+    
+    .contraseña P {
+        font-size: 2em;
+        color: rgba(245, 245, 245, 0.693);
+    }
+    
+    .contraseña div {
+        font-size: 1em;
+        color: rgba(245, 245, 245, 0.693);
+    }
+    
+    .container-contraseña {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 12%;
+        padding-right: 12%;
+    }
+    
+    .container-contraseña div {
+        padding: 5%;
+        padding-left: 2px;
+    }
+    
+    .mostrar-contraseña {
+        padding-left: 2px;
+        border-radius: 10px;
+        height: 20px;
+        color: white;
+        background-color: darkblue;
+    }
+    
+    .num-contraseñas {
+        width: 30px;
+        border-radius: 5px;
+        background-color: whitesmoke;
+        color: black;
+    }
+    
+    .btnComtraseña {
+        height: 30px;
+        border-radius: 8px;
+        color: whitesmoke;
+        background-color: rgba(23, 84, 228, 0.86);
+    }
+    /*----LISTADO------*/
+    
+    .container-listado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .listado p {
+        font-size: 1.5em;
+    }
+    
+    .listado {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        height: 500px;
+    }
+    
+     ::placeholder {
+        font-size: 8px;
+    }
+    
+    .enl-desc {
+        margin: 5px;
+    }
+    
+    .enlc-nombre {
+        margin: 5px;
+    }
+    
+    .btnAñadirEnlace {
+        width: 310px;
+        margin: 10px;
+        border-radius: 5px;
+        color: whitesmoke;
+        background-color: rgba(23, 84, 228, 0.86);
+        transition: box-shadow 0.25s ease-in-out;
+        box-shadow: 0px 0px #fff;
+    }
+    
+    .btnAñadirEnlace:hover {
+        box-shadow: 6px 6px 0 #fff;
+    }
+    
+    .ul-footerL {
+        display: flex;
+        gap: 25px;
+        height: 340px;
+        align-items: flex-end;
+    }
+    
+    .containerList {
+        width: 317px;
+    }
+    
+    .listado-enlaces {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .listado-enlaces li {
+        display: flex;
+        position: relative;
+        left: 5px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border: 1px solid rgba(245, 245, 245, 0.693);
+        border-radius: 5px;
+        width: 90px;
+        height: 50px;
+        color: #fff;
+    }
+    
+    .hidden .cerrar {
+        cursor: pointer;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+    }
+    /*----Meteorologico--------*/
+    
+    .ul-footerE {
+        display: flex;
+        gap: 25px;
+        height: 51.5em;
+        align-items: flex-end;
+    }
