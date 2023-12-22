@@ -347,6 +347,113 @@
     .ul-footerE {
         display: flex;
         gap: 25px;
-        height: 51.5em;
+        height: 240px;
         align-items: flex-end;
+    }
+    /*
+    .form-temperatura {
+        display: flex;
+    }*/
+    
+    .infoCiudad {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 20px;
+    }
+    
+    .container-temperatura {
+        display: flex;
+        justify-content: center;
+        font-size: 8px;
+        height: 600px;
+    }
+    
+    .form-temperatura {
+        border-radius: 8%;
+        width: 550px;
+        height: 400px;
+        margin-top: 100px;
+    }
+    
+    .contendo-TempTiempo {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+    }
+    
+    .list-tiempo {
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+        height: 200px;
+        overflow-x: scroll;
+    }
+    
+    .list_horas {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        width: 400px;
+        height: 60px;
+        display: flex;
+    }
+    
+    .list_img {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 400px;
+        height: 60px;
+        display: flex;
+    }
+    
+    .list_grados {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        width: 400px;
+        height: 60px;
+    }
+    /*----------------*/
+    
+    .temperatura {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        width: 800px;
+    }
+    
+    .temperatura img {
+        display: flex;
+    }
+    
+    .grados {
+        font-size: 22px;
+        color: #fff;
+    }
+    
+    .iconoGrados {
+        padding-left: 30px;
+    }
+    
+    .tipotiempo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 800px;
+    }
+    
+    .prec_lluvias,
+    .humedad,
+    .viento {
+        height: 25px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .list-tiempo {
+        display: flex;
     }

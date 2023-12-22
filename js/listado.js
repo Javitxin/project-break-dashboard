@@ -79,7 +79,7 @@ function pintarHtmlWebs() {
 
             document.getElementById('list_enlace').innerHTML += `
                 <li class=hidden> ${pintarDes}
-                <img class=cerrar src='../assets/img/iconoCerrar.png' alt='cerrar ventana' onclick='borrarObjWeb(${i})' >
+                <img class=cerrar src='./assets/img/iconoCerrar.png' alt='cerrar ventana' onclick='borrarObjWeb(${i})' >
                 </li>
                 `;
         })
