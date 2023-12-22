@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="imgBack">
+    <main class="main">
+        <section class="container-listado">
+            <div class="listado">
+                <p>Añade tu enlace de interes <img src="./assets/img/cadenacoche.png" alt="icono-cadena"></p>
+                <input type="text" id="enlcDesc" class="enl-desc" placeholder="Nombre de tu enlace" value="">
+                <input type="text" id="enlcNombre" class="enlc-nombre" placeholder="Pega aquí tu URL" value="">
+                <input type="button" id="btn_añadir_enlace" class="btnAñadirEnlace" value="Añadir enlace">
+                <div class="containerList">
+
+                    <ul id="list_enlace" class="listado-enlaces"></ul>
+                </div>
+            </div>
+        </section>
+        <section class="reloj-container">
+            <div class="form_reloj">
+                <p>Son las...
+                    <div id="reloj" class="reloj"></div>
+                    <div id="date" class="date"></div>
+                    <div id="phraseOTDay" class="phraseOTDay"></div>
+                </p>
+            </div>
+        </section>
+        <section class="container-temperatura">
+            <div class="form-temperatura">
+                <div class="infoCiudad">
+                    <p id="ciudadPais" class="ciudad-pais"></p>
+                    <p id="estadoClima" class="estado"></p>
+                </div>
+                <div class="contendo-TempTiempo">
+                    <div class="temperatura">
+                        <img id="imgCondicion" class="imgCondicion" src="" alt="">
+                        <p id="grados" class="grados"> </p>
+                        <img id="iconoGrados" class="iconoGrados" src="./assets/img/celsius.png" alt="icono termometro" />
+                    </div>
+                    <div class="tipotiempo">
+                        <p id="precipitaciones" class="prec_lluvias"></p>
+                        <p id="humedad" class="humedad"></p>
+                        <p id="viento" class="viento"></p>
+                    </div>
+                </div>
+
+                <div class="list-tiempo" white-space: nowrap;>
+
+                    <div id="list_horas" class="list_horas"></div>
+                    <div id="list_img" class="list_img"></div>
+                    <div id="list_grados" class="list_grados"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section></section>
+
+
+    </main>
+    <footer>
+        <div class="containerNav">
+            <ul class="ul-footerL">
+                <li>
+                    <a href="./reloj.html"><img class="logo-footer" src="./assets/img/relojcoche.png" alt="Imagen-reloj-coche" /></a>
+                </li>
+                <li>
+                    <a href="./contraseñas.html"><img class="logo-footer" src="./assets/img/candadoCoche.png" alt="Imagen-candado-coche" /></a>
+                </li>
+                <li>
+                    <a href="./listado.html"><img class="logo-footer" src="./assets/img/cadenacoche.png" alt="Imagen-cadena-coche" /></a>
+                </li>
+                <li>
+                    <a href="./estacion.html"><img class="logo-footer" src="./assets/img/nubecoche.png" alt="Imagen-nube-cocje" /></a>
+                </li>
+        </div>
+    </footer>
+
+
+    <script src="./js/imagenes.js"></script>
+    <script src="./js//reloj.js"></script>
+    <script src="./js/contraseñas.js"></script>
+    <script src="./js/listado.js"></script>
+    <script src="./js/contraseñas.js"></script>
+</body>
+
+</html>
