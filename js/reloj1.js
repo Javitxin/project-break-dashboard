@@ -1,10 +1,10 @@
 let nowHours = new Date();
-const date = document.getElementById('date');
+const date = document.getElementById('divDate');
 const phraseOTDay = document.getElementById('phraseOTDay');
 
 // Funcion reloj y frases
 const relojDigital = () => {
-    const reloj = document.getElementById('reloj');
+    const reloj = document.getElementById('divReloj');
 
     let hours = nowHours.getHours();
     let minutes = nowHours.getMinutes();

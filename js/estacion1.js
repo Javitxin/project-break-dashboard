@@ -1,30 +1,20 @@
-/*
+const ciudaPais = document.getElementById('idCiudadPais');
+const estadoClima = document.getElementById('idEstadoClima');
+const imgCondicion = document.getElementById('idImgCondicion');
+const iconoGrados = document.getElementById('idIconoGrados');
 
-https://api.weatherapi.com/v1/forecast.json?key=9242d0ea9a694b13b49181411232112&q=Leon Spain&days=1&aqi=no&alerts=no
-*/
+const grados = document.getElementById('idGrados');
+const precipitaciones = document.getElementById('idPrecipitaciones');
+const humedad = document.getElementById('idHumedad');
+const viento = document.getElementById('idViento');
+//const previsionHoras = document.getElementById('previsionHoras');
 
-
-
-const ciudaPais = document.getElementById('ciudadPais');
-const estadoClima = document.getElementById('estadoClima');
-const imgCondicion = document.getElementById('imgCondicion');
-const iconoGrados = document.getElementById('iconoGrados');
-
-const grados = document.getElementById('grados');
-const precipitaciones = document.getElementById('precipitaciones');
-const humedad = document.getElementById('humedad');
-const viento = document.getElementById('viento');
-const previsionHoras = document.getElementById('previsionHoras');
-
-const list_horas = document.getElementById('list_horas');
-const list_img = document.getElementById('list_img');
-const list_grados = document.getElementById('list_grados');
+const list_horas = document.getElementById('idList-horas');
+const list_img = document.getElementById('idList-img');
+const list_grados = document.getElementById('idList-grados');
 
 const apiKey = '9242d0ea9a694b13b49181411232112';
 const apiCiudad = 'Leon Spain';
-
-
-// informacion de la Api: 
 
 function getTiempo() {
     fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey} &q=${apiCiudad}&days=1&aqi=no&alerts=no`)
@@ -63,27 +53,7 @@ function getTiempo() {
                 list_horas.innerHTML += `<p>${hora}</p>`;
                 list_img.innerHTML += `<img src=https:${arrForecast[i].condition.icon} alt='icono'/>`;
                 list_grados.innerHTML += `<p>${arrForecast[i].temp_c}&#8451</p>`;
-
-
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         })
         .catch(error => {
             console.log('Error en la obteción de los datos', error)

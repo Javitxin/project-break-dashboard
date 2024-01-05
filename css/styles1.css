@@ -1,0 +1,404 @@
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500&family=Space+Mono&display=swap');
+            html,
+            body,
+            div,
+            span,
+            applet,
+            object,
+            iframe,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote,
+            pre,
+            a,
+            abbr,
+            acronym,
+            address,
+            big,
+            cite,
+            code,
+            del,
+            dfn,
+            em,
+            img,
+            ins,
+            kbd,
+            q,
+            s,
+            samp,
+            small,
+            strike,
+            strong,
+            sub,
+            sup,
+            tt,
+            var,
+            b,
+            u,
+            i,
+            center,
+            dl,
+            dt,
+            dd,
+            ol,
+            ul,
+            li,
+            fieldset,
+            form,
+            label,
+            legend,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td,
+            article,
+            aside,
+            canvas,
+            details,
+            embed,
+            figure,
+            figcaption,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            output,
+            ruby,
+            section,
+            summary,
+            time,
+            mark,
+            audio,
+            video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            section {
+                display: block;
+            }
+            
+            body {
+                line-height: 1;
+            }
+            
+            ol,
+            ul {
+                list-style: none;
+            }
+            
+            blockquote,
+            q {
+                quotes: none;
+            }
+            
+            blockquote:before,
+            blockquote:after,
+            q:before,
+            q:after {
+                content: '';
+                content: none;
+            }
+            
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            /*----MI CSS----*/
+            
+            html {
+                height: 100%;
+            }
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100%;
+                font-family: 'Poppins', 'Roboto';
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                background-attachment: fixed;
+                transition: background 10s linear;
+                color: rgba(245, 245, 245, 0.772);
+            }
+            /*---Header---*/
+            
+            .header {
+                position: fixed;
+                padding-left: 15px;
+            }
+            
+            .header a {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                text-decoration: none;
+                font-family: 'Poppins', 'Roboto';
+                color: rgba(245, 245, 245, 0.539);
+            }
+            /*---Footer---*/
+            
+            .footer {
+                margin-top: auto;
+                padding-right: 15px;
+            }
+            
+            .footer nav {
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+            }
+            /*----main----*/
+            
+            .main-container {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+                min-height: 90vh;
+            }
+            /*------RELOJ-------*/
+            
+            .reloj-container {
+                border-radius: 5px;
+                box-shadow: 5px 5px 5px 5px;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                align-items: center;
+                width: 400px;
+                height: 150px;
+                color: rgba(245, 245, 245, 0.727);
+            }
+            
+            .reloj {
+                font-size: 50px;
+            }
+            
+            .phraseOTDay {
+                font-size: 15px;
+            }
+            /*----LISTADO-----*/
+            
+            .container-listadoWebs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 400px;
+                height: 150px;
+            }
+            
+            .inputs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 400px;
+                height: 150px;
+                gap: 8px;
+            }
+            
+             ::placeholder {
+                font-size: 8px;
+            }
+            
+            .container-list {
+                min-height: 300px;
+                width: 400px;
+                overflow-x: auto;
+            }
+            
+            .list_enlace {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            
+            .list_enlace li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin-top: 10px;
+                width: 90px;
+                height: 50px;
+                border: 1px solid rgba(18, 17, 17, 0.693);
+                border-radius: 5px;
+                position: relative;
+            }
+            
+            .cerrar {
+                position: absolute;
+                cursor: pointer;
+                top: -2px;
+                right: -2px;
+            }
+            
+            .inpAñadir {
+                border-radius: 5px;
+                color: whitesmoke;
+                background-color: rgba(23, 84, 228, 0.86);
+                transition: box-shadow 0.25s ease-in-out;
+                box-shadow: 0px 0px #fff;
+            }
+            
+            .inpAñadir:hover {
+                box-shadow: 6px 6px 0 #fff;
+            }
+            /*----Estacion------*/
+            
+            .tiempo-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 300px;
+                position: relative;
+                border-radius: 5px;
+                box-shadow: 5px 5px 5px 5px;
+                color: rgba(245, 245, 245, 0.727);
+            }
+            
+            .info-ciudad {
+                margin-top: 30px;
+                position: absolute;
+                top: -20px;
+                left: 5px;
+            }
+            
+            .container-temp-precipit {
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+            }
+            
+            .container-tempTiempo {
+                display: flex;
+                align-items: center;
+            }
+            
+            .container-list-tiempo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow-x: auto;
+                min-height: 100px;
+                width: 400px;
+            }
+            
+            .container-precipiaciones {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .list-horas,
+            .list-img,
+            .list-grados {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            /*--Contraseña---*/
+            
+            .container-contraseña {
+                border-radius: 5px;
+                box-shadow: 5px 5px 5px 5px;
+                color: rgba(245, 245, 245, 0.727);
+            }
+            
+            .contraseña P {
+                font-size: 2em;
+                color: rgba(245, 245, 245, 0.693);
+            }
+            
+            .contraseña div {
+                font-size: 1em;
+                color: rgba(245, 245, 245, 0.693);
+            }
+            
+            .num-contraseñas {
+                width: 30px;
+                border-radius: 5px;
+                background-color: whitesmoke;
+                color: black;
+            }
+            
+            .mostrar-contraseña {
+                padding-left: 2px;
+                border-radius: 10px;
+                height: 20px;
+                color: white;
+                background-color: darkblue;
+            }
+            
+            .btnConmtraseña {
+                height: 30px;
+                border-radius: 8px;
+                color: whitesmoke;
+                background-color: rgba(23, 84, 228, 0.86);
+            }
+            /*---Index----*/
+            
+            .main-containerindex {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            
+            .index-containerListado {
+                display: flex;
+                flex-direction: column;
+                padding-top: 80px;
+            }
+            
+            .index-containerTemp {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 300px;
+                gap: 60px;
+            }
+            
+            .index-containerTemp,
+            .info-ciudad {
+                position: absolute;
+            }
+            
+            .index-containerReloj {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 80px;
+            }

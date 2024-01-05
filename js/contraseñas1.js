@@ -1,9 +1,9 @@
-const btnContra = document.getElementById('btn_contraseña');
+const btnContra = document.getElementById('idbtnContraseña');
 
 //let numCaracteres = document.getElementById('num_contraseñas').value;
 const generarContraseña = (numCaracteres) => {
         let contraseña = '';
-        const num_contraseñas = document.getElementById('num_contraseñas').value;
+        const num_contraseñas = document.getElementById('idnumContraseñas').value;
 
         for (i = 1; i <= numCaracteres; i++) {
             const mayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -27,7 +27,7 @@ const generarContraseña = (numCaracteres) => {
                 contraseña += numeros;
             }
         }
-        const mostrarContraseña = document.getElementById('mostrarContraseña');
+        const mostrarContraseña = document.getElementById('idMostrarContraseña');
         mostrarContraseña.style = 'display: block '
         mostrarContraseña.value = contraseña;
         if (numCaracteres == '') {
@@ -53,6 +53,6 @@ const generarContraseña = (numCaracteres) => {
     }
     //generarContraseña(num_contraseñas);
 btnContra.addEventListener('click', function() {
-    generarContraseña(document.getElementById('num_contraseñas').value);
+    generarContraseña(document.getElementById('idnumContraseñas').value);
 
 })

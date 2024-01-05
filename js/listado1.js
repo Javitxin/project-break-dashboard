@@ -1,21 +1,21 @@
-const btn_añadir_enlace = document.getElementById('btn_añadir_enlace');
+const inpAñadir = document.getElementById('inpAñadir');
 const list_enlace = document.getElementById('list_enlace');
+
 
 document.addEventListener('DOMContentLoaded', () => {
     pintarHtmlWebs()
 });
 
-btn_añadir_enlace.addEventListener('click', () => {
+inpAñadir.addEventListener('click', () => {
     comprobarDatos()
 });
 
+// Función comprobar datos: 
 function comprobarDatos() {
+    let inpDescrip = document.getElementById('inpDescrip').value;
+    let inpNombre = document.getElementById('inpNombre').value;
 
-    // compruebo si están vacios: 
-    let descWeb = document.getElementById('enlcDesc').value;
-    let nomWeb = document.getElementById('enlcNombre').value;
-
-    if ((descWeb == '') || (nomWeb == '')) {
+    if ((inpDescrip == '') || (inpNombre == '')) {
         window.alert('Algun campo está vacio');
     } else {
         console.log('funciona');
@@ -24,8 +24,8 @@ function comprobarDatos() {
 }
 
 function guardarDatos() {
-    let tituloWeb = document.getElementById('enlcDesc').value;
-    let direcWeb = document.getElementById('enlcNombre').value;
+    let tituloWeb = document.getElementById('inpDescrip').value;
+    let direcWeb = document.getElementById('inpNombre').value;
 
     let objWeb = {
         descripcion: tituloWeb,
@@ -48,11 +48,10 @@ function guardarDatos() {
 
     // limpio los cuadros de texto 
 
-    document.getElementById('enlcDesc').value = '';
-    document.getElementById('enlcNombre').value = '';
+    document.getElementById('inpDescrip').value = '';
+    document.getElementById('inpNombre').value = '';
 
 }
-
 // función pintarHtmlWens 
 function pintarHtmlWebs() {
     // recogo los datos del local
@@ -67,7 +66,8 @@ function pintarHtmlWebs() {
     } else {
 
         let arrObjWebs = JSON.parse(localStorage.getItem('objWebs'));
-        document.getElementById('list_enlace').innerHTML = '';
+        list_enlace.innerHTML = '';
+        //document.getElementById('list_enlace').innerHTML = '';
 
         arrObjWebs.forEach((item, i) => {
             // Recojo cada valor del obj 
@@ -75,9 +75,10 @@ function pintarHtmlWebs() {
             let pintarDes = item.descripcion;
             let pintarWeb = item.direccionWeb;
 
-            // pinto en el HTML 
+            // pinto en el HTML
 
-            document.getElementById('list_enlace').innerHTML += `
+            //document.getElementById('list_enlace').innerHTML += `
+            list_enlace.innerHTML += `
                 <li class=hidden> ${pintarDes}
                 <img class=cerrar src='./assets/img/iconoCerrar.png' alt='cerrar ventana' onclick='borrarObjWeb(${i})' >
                 </li>
@@ -85,7 +86,6 @@ function pintarHtmlWebs() {
         })
     }
 }
-
 // función Borrar 
 
 function borrarObjWeb(posiciondElemento) {
